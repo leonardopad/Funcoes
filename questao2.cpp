@@ -1,6 +1,6 @@
 #include <iostream>
 
-float equacao(int A, int B, int c){
+float equacao(int a, int b, int c){
 	
 	return ((b*b)-4*a*c);
 }
@@ -13,5 +13,5 @@ int main (){
 	std:: cin >> numero2;
 	std:: cin >> numero3;
 	
-	std:: cout << equacao(numero1,numero2,numero3)
+	std:: cout << equacao(numero1,numero2,numero3);
 }
