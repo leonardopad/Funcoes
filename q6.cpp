@@ -2,10 +2,7 @@
 #include <cstdlib>
 #include <ctime>
 int dado(){
-	int parametro = 0;
-	parametro = time(NULL);
-	srand(parametro);
-    return (1 + rand()%6);
+    return (1 + rand() % 6);
 }
 int main(){
 	int d[] = {0, 0, 0, 0, 0, 0, 0};
