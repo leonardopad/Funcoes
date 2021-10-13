@@ -1,17 +1,39 @@
 #include <iostream>
 #include <cstdlib>
 #include <ctime>
-int dado(int parametro){
-	parametro = time(0);
+int dado(){
+	int parametro = 0;
+	parametro = time(NULL);
 	srand(parametro);
     return (1 + rand()%6);
 }
 int main(){
-	int d[0], num1, num2, num3, num4, num5, num6;
+	int d[] = {0, 0, 0, 0, 0, 0, 0};
+	int n1, n2, n3, n4, n5, n6;
 
-	for(int i=0 ; i <= 100 ; i++){
-       std:: cout << dado(d[])= dado[i];
-	}	
-//		std:: cout << num1 << "\n" << num2 << "\n" << num3 << "\n" << num4 << "\n" << num5 << "\n" << num6 << "\n";
+	for(int i=0 ; i <= 100000 ; i++){
+       int resultado = dado();
+       std:: cout << resultado << "\n";
+       if(resultado == 1){
+       	d[0]++;
+	   } else if(resultado == 2){
+	   	d[1]++;
+	   }else if(resultado == 3){
+	   	d[2]++;
+	   }else if(resultado == 4){
+	   	d[3]++;
+	   }else if(resultado == 5){
+	    d[4]++;
+	   }else if(resultado == 6){
+	   	d[5]++;
+	   }
+    }	
+		std::cout << "Caiu 1 em : "  << d[0] << " vezes" << "\n";
+ 		std:: cout << "Caiu 2 em : " << d[1] << " vezes" << "\n";
+		std:: cout << "Caiu 3 em : " << d[2] << " vezes" << "\n";
+		std:: cout << "Caiu 4 em : " << d[3] << " vezes" << "\n";
+		std:: cout << "Caiu 5 em : " << d[4] << " vezes" << "\n";
+		std:: cout << "Caiu 6 em : " << d[5] << " vezes" << "\n";
+		 
 	return 0;
 }
