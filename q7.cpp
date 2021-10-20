@@ -22,19 +22,19 @@ int main (){
 	std:: cin >> nota2;
 	std:: cin >> nota3;
 	
-	if(nota1 >= nota2 && nota2 >= nota3){
+	if(nota1 >= nota2 && nota1 >= nota3 && nota2 >= nota3){
 		maior = nota1;
 		meio  = nota2;
 		menor = nota3;
-	}else if (nota3 >= nota2 && nota2 >= nota1) {
+	}else if (nota3 >= nota2 && nota3 >= nota1 && nota2 >= nota1) {
 		maior = nota3;
 		meio  = nota2;
 		menor = nota1;
-	}else if (nota2 > nota3 && nota3 > nota1){
+	}else if (nota2 >= nota3 && nota2 >= nota1 && nota3 >= nota1){
 		maior = nota2;
 		meio  = nota3;
 		menor = nota1;
-	}else if (nota2 > nota1 && nota1 > nota3){
+	}	else if (nota2 >= nota1 && nota2 >= nota3 && nota1 >= nota3){
 		maior = nota2;
 		meio = nota1;
 		menor = nota3;
